@@ -90,7 +90,25 @@ const Container = styled.div<VisibleProps>`
 
 ## Deployment
 
-To build the app for production:
+### GitHub Pages
+
+This project is configured for automatic deployment to GitHub Pages. When you push to the main branch, GitHub Actions will automatically build and deploy the app to GitHub Pages.
+
+To set up GitHub Pages deployment:
+
+1. Create a GitHub repository for this project
+2. Update the `homepage` field in `package.json` with your GitHub username:
+   ```
+   "homepage": "https://YOUR_USERNAME.github.io/fruity-match-game"
+   ```
+3. Push the code to your GitHub repository:
+   ```
+   git remote add origin https://github.com/YOUR_USERNAME/fruity-match-game.git
+   git push -u origin main
+   ```
+4. GitHub Actions will automatically build and deploy the app to GitHub Pages
+
+To build the app locally for production:
 
 ```
 npm run build
