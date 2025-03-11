@@ -79,7 +79,7 @@ const Input = styled.input`
   outline: none;
   transition: border-color 0.3s ease;
   text-align: center;
-  font-family: 'Bubblegum Sans', sans-serif;
+  font-family: 'Bubblegum Sans', 'Comic Sans MS', cursive, sans-serif;
   
   &:focus {
     border-color: #5f27cd;

@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Bubblegum Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Bubblegum Sans', 'Comic Sans MS', cursive, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -23,7 +23,7 @@ code {
 
 button {
   cursor: pointer;
-  font-family: 'Bubblegum Sans', sans-serif;
+  font-family: 'Bubblegum Sans', 'Comic Sans MS', cursive, sans-serif;
   border: none;
   outline: none;
 }

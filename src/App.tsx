@@ -16,7 +16,7 @@ const AppContainer = styled.div`
   justify-content: center;
   min-height: 100vh;
   background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Bubblegum Sans', 'Comic Sans MS', cursive, sans-serif;
   padding: 20px;
 `;
 
