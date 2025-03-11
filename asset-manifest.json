@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/fruity-match-game/static/css/main.e2c00f80.css",
-    "main.js": "/fruity-match-game/static/js/main.dc8a39e1.js",
-    "static/js/453.cb94dc0f.chunk.js": "/fruity-match-game/static/js/453.cb94dc0f.chunk.js",
-    "index.html": "/fruity-match-game/index.html",
-    "main.e2c00f80.css.map": "/fruity-match-game/static/css/main.e2c00f80.css.map",
-    "main.dc8a39e1.js.map": "/fruity-match-game/static/js/main.dc8a39e1.js.map",
-    "453.cb94dc0f.chunk.js.map": "/fruity-match-game/static/js/453.cb94dc0f.chunk.js.map"
+    "main.css": "./static/css/main.e2c00f80.css",
+    "main.js": "./static/js/main.cfa9eb5d.js",
+    "static/js/453.cb94dc0f.chunk.js": "./static/js/453.cb94dc0f.chunk.js",
+    "index.html": "./index.html",
+    "main.e2c00f80.css.map": "./static/css/main.e2c00f80.css.map",
+    "main.cfa9eb5d.js.map": "./static/js/main.cfa9eb5d.js.map",
+    "453.cb94dc0f.chunk.js.map": "./static/js/453.cb94dc0f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e2c00f80.css",
-    "static/js/main.dc8a39e1.js"
+    "static/js/main.cfa9eb5d.js"
   ]
 }
