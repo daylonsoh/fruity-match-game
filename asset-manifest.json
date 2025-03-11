@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fruity-match-game/static/css/main.e2c00f80.css",
+    "main.js": "/fruity-match-game/static/js/main.b8f2eeed.js",
+    "static/js/453.cb94dc0f.chunk.js": "/fruity-match-game/static/js/453.cb94dc0f.chunk.js",
+    "index.html": "/fruity-match-game/index.html",
+    "main.e2c00f80.css.map": "/fruity-match-game/static/css/main.e2c00f80.css.map",
+    "main.b8f2eeed.js.map": "/fruity-match-game/static/js/main.b8f2eeed.js.map",
+    "453.cb94dc0f.chunk.js.map": "/fruity-match-game/static/js/453.cb94dc0f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2c00f80.css",
+    "static/js/main.b8f2eeed.js"
+  ]
+}
