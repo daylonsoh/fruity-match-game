@@ -2,7 +2,7 @@
   "name": "fruity-match-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://[REPLACE_WITH_YOUR_GITHUB_USERNAME].github.io/fruity-match-game",
+  "homepage": "https://daylonsoh.github.io/fruity-match-game",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
