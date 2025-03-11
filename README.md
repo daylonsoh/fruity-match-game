@@ -1,46 +1,109 @@
-# Getting Started with Create React App
+# Fruity Match Memory Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A touch-friendly memory matching game designed for kids to enhance their memory and concentration skills. The game involves matching fruit graphics across different grid sizes, with increasing difficulty levels and time limits.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Progressive Difficulty**: 10 levels with increasing difficulty
+- **Adaptive Grid Sizes**: 
+  - Levels 1-5: 2x2 grid
+  - Levels 6-10: 3x3 grid
+- **Time Limits**: 
+  - Easy Levels (1-3): 90 seconds
+  - Medium Levels (4-6): 60 seconds
+  - Hard Levels (7-10): 45 seconds
+- **Colorful Fruit Graphics**: Uses emoji-based fruit graphics for visual appeal
+- **Score Tracking**: Points awarded based on time left and mistakes made
+- **Touch Optimized**: Designed specifically for tablet use with touch-friendly controls
+- **Responsive Design**: Works on various screen sizes and orientations
+- **Sound Effects**: Auditory feedback for button clicks, tile flips, matches, level completion, and game over
+- **Leaderboard**: Records and displays the top 10 player scores
+- **Player Names**: Allows players to enter their name (up to 10 characters) for the leaderboard
 
-### `npm start`
+## Game Rules
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Levels 1-5:
+- Players flip two tiles at a time to find matching fruit pairs
+- If tiles do not match, they flip back over
+- The game ends when all pairs are found within the time limit
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Levels 6-10:
+- Players flip three tiles at a time to find matching fruit triplets
+- If tiles do not match, they flip back over
+- The game ends when all triplets are found within the time limit
 
-### `npm test`
+## Technical Details
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Built with React and TypeScript
+- Styled with styled-components
+- Optimized for touch devices
+- Responsive design for various screen sizes
+- Local storage for persistent leaderboard data
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (v14 or higher)
+- npm or yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Start the development server:
+   ```
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Fixing TypeScript Errors
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you encounter TypeScript errors related to styled-components, make sure to install the type definitions:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+npm install @types/styled-components
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+For errors related to setState functions, update the GameContext.tsx file to use the Dispatch<SetStateAction<T>> type from React:
 
-## Learn More
+```typescript
+import { Dispatch, SetStateAction } from 'react';
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+// Example:
+setGameState: Dispatch<SetStateAction<GameState>>;
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+For component props, define proper interfaces:
+
+```typescript
+interface VisibleProps {
+  visible: boolean;
+}
+
+const Container = styled.div<VisibleProps>`
+  display: ${({ visible }: { visible: boolean }) => (visible ? 'flex' : 'none')};
+`;
+```
+
+## Deployment
+
+To build the app for production:
+
+```
+npm run build
+```
+
+This will create a `build` folder with the optimized production build.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+- Fruit emojis provided by standard Unicode emoji set
+- Designed based on educational principles for children's cognitive development
+- Sound effects created for enhanced user experience
