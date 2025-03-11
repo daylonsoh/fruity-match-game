@@ -153,13 +153,13 @@ const GameOver: React.FC = () => {
 
   // Play button sound
   const playButtonSound = () => {
-    const audio = new Audio('/sounds/button-click.mp3');
+    const audio = new Audio(`${process.env.PUBLIC_URL}/sounds/button-click.mp3`);
     audio.play().catch(e => console.log('Audio play failed:', e));
   };
 
   // Play game over sound
   const playGameOverSound = () => {
-    const audio = new Audio('/sounds/game-over.mp3');
+    const audio = new Audio(`${process.env.PUBLIC_URL}/sounds/game-over.mp3`);
     audio.play().catch(e => console.log('Audio play failed:', e));
   };
 

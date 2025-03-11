@@ -105,13 +105,13 @@ const Tile: React.FC<TileProps> = ({ tile, onClick }) => {
 
   // Play flip sound
   const playFlipSound = () => {
-    const audio = new Audio('/sounds/card-flip.mp3');
+    const audio = new Audio(`${process.env.PUBLIC_URL}/sounds/card-flip.mp3`);
     audio.play().catch(e => console.log('Audio play failed:', e));
   };
 
   // Play match sound
   const playMatchSound = () => {
-    const audio = new Audio('/sounds/match-success.mp3');
+    const audio = new Audio(`${process.env.PUBLIC_URL}/sounds/match-success.mp3`);
     audio.play().catch(e => console.log('Audio play failed:', e));
   };
 

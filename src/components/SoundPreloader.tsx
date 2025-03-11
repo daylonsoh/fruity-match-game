@@ -4,11 +4,11 @@ const SoundPreloader: React.FC = () => {
   useEffect(() => {
     // List of all sound files used in the game
     const soundFiles = [
-      '/sounds/button-click.mp3',
-      '/sounds/card-flip.mp3',
-      '/sounds/match-success.mp3',
-      '/sounds/level-complete.mp3',
-      '/sounds/game-over.mp3'
+      `${process.env.PUBLIC_URL}/sounds/button-click.mp3`,
+      `${process.env.PUBLIC_URL}/sounds/card-flip.mp3`,
+      `${process.env.PUBLIC_URL}/sounds/match-success.mp3`,
+      `${process.env.PUBLIC_URL}/sounds/level-complete.mp3`,
+      `${process.env.PUBLIC_URL}/sounds/game-over.mp3`
     ];
 
     // Preload all sound files

@@ -14,7 +14,7 @@ const StartScreenContainer = styled.div<VisibleProps>`
   width: 100%;
   max-width: 600px;
   padding: 30px;
-  background-image: url('/images/bush_tile.jpg');
+  background-image: url('${process.env.PUBLIC_URL}/images/bush_tile.jpg');
   background-repeat: repeat;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -176,7 +176,7 @@ const StartScreen: React.FC = () => {
 
   // Play button sound
   const playButtonSound = () => {
-    const audio = new Audio('/sounds/button-click.mp3');
+    const audio = new Audio(`${process.env.PUBLIC_URL}/sounds/button-click.mp3`);
     audio.play().catch(e => console.log('Audio play failed:', e));
   };
 
@@ -210,7 +210,7 @@ const StartScreen: React.FC = () => {
 
   return (
     <StartScreenContainer visible={gameState === 'start'}>
-      <LogoImage src="/images/fruity_match_transparent.png" alt="Fruity Match" />
+      <LogoImage src={`${process.env.PUBLIC_URL}/images/fruity_match_transparent.png`} alt="Fruity Match" />
       
       <div>
         <h3 style={{ 

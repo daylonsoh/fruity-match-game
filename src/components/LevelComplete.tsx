@@ -182,13 +182,13 @@ const LevelComplete: React.FC = () => {
   
   // Play button sound
   const playButtonSound = () => {
-    const audio = new Audio('/sounds/button-click.mp3');
+    const audio = new Audio(`${process.env.PUBLIC_URL}/sounds/button-click.mp3`);
     audio.play().catch(e => console.log('Audio play failed:', e));
   };
 
   // Play level complete sound
   const playLevelCompleteSound = () => {
-    const audio = new Audio('/sounds/level-complete.mp3');
+    const audio = new Audio(`${process.env.PUBLIC_URL}/sounds/level-complete.mp3`);
     audio.play().catch(e => console.log('Audio play failed:', e));
   };
   
